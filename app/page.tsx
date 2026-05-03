@@ -15,6 +15,9 @@ export default function Home() {
                 <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight bg-gradient-to-r from-white via-cyan-400 to-indigo-400 bg-clip-text text-transparent">
                   Saim Maqsood
                 </h1>
+                <span className="bg-gradient-to-r from-cyan-500/20 to-indigo-500/20 text-cyan-300 text-sm font-semibold px-3 py-1.5 rounded-full border border-cyan-500/30 flex items-center gap-1">
+                  <span>🎨</span> UI/UX Designer & Full-Stack Developer
+                </span>
               </div>
               <div className="flex flex-wrap gap-4 text-gray-300 text-base mt-2">
                 <div className="flex items-center gap-2"><span className="text-cyan-400">📍</span> Dubai, UAE</div>
@@ -22,7 +25,7 @@ export default function Home() {
                 <div className="flex items-center gap-2"><span className="text-amber-400">🌍</span> Pakistani Citizen</div>
               </div>
               <p className="mt-4 text-gray-300 max-w-2xl text-md md:text-lg leading-relaxed border-l-4 border-cyan-400 pl-4">
-                Results-driven Computer Science Graduate specialized in full‑stack development. Building scalable web & mobile apps with Next.js, React, React Native, and Django. Available for immediate start in UAE tech market.
+                Results-driven Computer Science Graduate specializing in full‑stack development and UI/UX design. Currently crafting responsive designs at Elchai Group while building scalable web & mobile apps with Next.js, React, React Native, and Django.
               </p>
             </div>
             <div className="flex flex-col gap-3 bg-gray-900/50 p-5 rounded-2xl backdrop-blur-md w-full lg:w-auto border border-gray-700">
@@ -42,7 +45,37 @@ export default function Home() {
                 github.com/Saim-Maqsood-22
               </a>
             </div>
-            <div className="flex gap-2"><span className="text-emerald-400">✓</span> Portfolio | Available Now</div>
+            <div className="flex gap-2"><span className="text-emerald-400">✓</span> Available Now | Currently at Elchai Group</div>
+          </div>
+        </div>
+
+        {/* Current Role Highlight - Elchai Design Work */}
+        <div className="mb-12">
+          <div className="bg-gradient-to-r from-cyan-500/10 via-indigo-500/10 to-purple-500/10 rounded-2xl p-6 border border-cyan-500/20">
+            <div className="flex items-center gap-3 mb-4">
+              <span className="text-4xl">🎨</span>
+              <div>
+                <h2 className="text-2xl font-bold text-white">Currently Crafting at Elchai Group</h2>
+                <p className="text-cyan-400 text-sm">UI/UX Designer · Feb 2026 – Present</p>
+              </div>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
+              <div className="bg-gray-900/50 rounded-xl p-4 border border-gray-800">
+                <span className="text-3xl block mb-2">🎯</span>
+                <h3 className="font-semibold text-white mb-2">Responsive Prototypes</h3>
+                <p className="text-gray-400 text-sm">Creating mobile-first, responsive designs in Figma that translate seamlessly to development.</p>
+              </div>
+              <div className="bg-gray-900/50 rounded-xl p-4 border border-gray-800">
+                <span className="text-3xl block mb-2">🤝</span>
+                <h3 className="font-semibold text-white mb-2">Cross-Team Collaboration</h3>
+                <p className="text-gray-400 text-sm">Working closely with senior management and cross-functional teams to deliver user-centered solutions.</p>
+              </div>
+              <div className="bg-gray-900/50 rounded-xl p-4 border border-gray-800">
+                <span className="text-3xl block mb-2">⚡</span>
+                <h3 className="font-semibold text-white mb-2">Design-to-Dev Handoff</h3>
+                <p className="text-gray-400 text-sm">Ensuring smooth development process with organized Figma files and design systems.</p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -50,17 +83,27 @@ export default function Home() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
           <div className="lg:col-span-2 bg-gray-900 rounded-2xl shadow-md p-6 border border-gray-800">
             <h2 className="text-2xl font-bold text-white border-l-4 border-cyan-500 pl-3 mb-5 flex items-center gap-2">
-              <span className="text-cyan-500">{'</>'}</span> Technical Expertise
+              <span className="text-cyan-500">{'</>'}</span> Technical & Design Skills
             </h2>
-            <div className="flex flex-wrap gap-2 mb-6">
-              {['ReactJS', 'Next.js', 'TypeScript', 'JavaScript (ES6+)', 'Tailwind CSS', 'React Native', 'Flutter', 'Expo', 'Django', 'Python', 'PostgreSQL / MongoDB', 'Firebase', 'Git/GitHub', 'RESTful APIs', 'Data Structures & Algorithms', 'OOP'].map((skill) => (
-                <span key={skill} className="bg-gray-800 text-gray-300 px-4 py-2 rounded-full text-sm font-medium hover:bg-gradient-to-r hover:from-cyan-500 hover:to-indigo-500 hover:text-white transition-all duration-200 cursor-default border border-gray-700">
-                  {skill}
-                </span>
-              ))}
+            <div className="mb-4">
+              <h3 className="text-sm font-semibold text-cyan-400 mb-2">🎨 Design Tools</h3>
+              <div className="flex flex-wrap gap-2 mb-6">
+                {['Figma', 'Adobe XD', 'Responsive Design', 'Wireframing', 'Prototyping', 'UI/UX Principles', 'Design Systems'].map((skill) => (
+                  <span key={skill} className="bg-gray-800 text-gray-300 px-4 py-2 rounded-full text-sm font-medium hover:bg-gradient-to-r hover:from-cyan-500 hover:to-indigo-500 hover:text-white transition-all duration-200 cursor-default border border-gray-700">
+                    {skill}
+                  </span>
+                ))}
+              </div>
             </div>
-            <div className="mt-2 pt-2 border-t border-gray-800">
-              <p className="text-gray-400 text-sm flex items-center gap-2"><span className="text-pink-400">🎨</span> UI/UX: Figma, responsive prototypes, cross-team collaboration</p>
+            <div>
+              <h3 className="text-sm font-semibold text-cyan-400 mb-2">⚡ Development Stack</h3>
+              <div className="flex flex-wrap gap-2">
+                {['ReactJS', 'Next.js', 'TypeScript', 'JavaScript (ES6+)', 'Tailwind CSS', 'React Native', 'Flutter', 'Expo', 'Django', 'Python', 'PostgreSQL / MongoDB', 'Firebase', 'Git/GitHub', 'RESTful APIs', 'Data Structures & Algorithms', 'OOP'].map((skill) => (
+                  <span key={skill} className="bg-gray-800 text-gray-300 px-4 py-2 rounded-full text-sm font-medium hover:bg-gradient-to-r hover:from-cyan-500 hover:to-indigo-500 hover:text-white transition-all duration-200 cursor-default border border-gray-700">
+                    {skill}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
           
@@ -86,15 +129,17 @@ export default function Home() {
             <h2 className="text-3xl font-bold bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">Work Experience</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-gray-900 p-5 rounded-xl shadow-sm border-l-4 border-cyan-500 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400">
+            <div className="bg-gradient-to-br from-gray-900 to-cyan-900/20 p-5 rounded-xl shadow-sm border-l-4 border-cyan-500 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400">
               <div className="flex justify-between items-start flex-wrap gap-2">
                 <h3 className="text-xl font-bold text-cyan-400">ELCHAI GROUP</h3>
-                <span className="text-xs bg-gray-800 text-gray-400 px-2 py-1 rounded-full">Feb 2026 – Present</span>
+                <span className="text-xs bg-cyan-500/20 text-cyan-300 px-2 py-1 rounded-full border border-cyan-500/30">Feb 2026 – Present</span>
               </div>
-              <p className="text-cyan-500 font-medium text-sm">UI/UX Designer (Internship)</p>
-              <ul className="list-disc list-inside text-gray-400 text-sm mt-3 space-y-1">
-                <li>Design responsive prototypes using Figma, ensuring smooth handoff for development teams.</li>
-                <li>Collaborate with senior management and cross-functional teams to deliver user-centered designs.</li>
+              <p className="text-cyan-500 font-medium text-sm">UI/UX Designer (Current Role)</p>
+              <ul className="list-disc list-inside text-gray-400 text-sm mt-3 space-y-2">
+                <li>Designing responsive prototypes using Figma, ensuring smooth handoff for development teams</li>
+                <li>Collaborating with senior management and cross-functional teams to deliver user-centered designs</li>
+                <li>Creating design systems and component libraries for consistent UI across multiple projects</li>
+                <li>Conducting user research and implementing feedback-driven design iterations</li>
               </ul>
             </div>
             
@@ -113,11 +158,59 @@ export default function Home() {
           </div>
         </div>
 
+        {/* Featured Design Work Section - NEW */}
+        <div className="mb-14">
+          <div className="flex items-center gap-2 border-b-2 border-gray-800 pb-3 mb-6">
+            <span className="text-3xl">🎨</span>
+            <h2 className="text-3xl font-bold bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">Design Portfolio Highlights</h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-7">
+            {[
+              {
+                title: "Elchai Group - Design System",
+                icon: "🎯",
+                desc: "Developing a comprehensive design system and component library for consistent branding across all Elchai Group digital products.",
+                tags: ["Figma", "Design System", "Component Library", "UI/UX"]
+              },
+              {
+                title: "Responsive Web Prototypes",
+                icon: "📱",
+                desc: "Creating mobile-first, fully responsive web prototypes that adapt seamlessly across devices and screen sizes.",
+                tags: ["Figma", "Responsive Design", "Wireframing", "Prototyping"]
+              },
+              {
+                title: "Cross-Team Collaboration Projects",
+                icon: "🤝",
+                desc: "Working with developers and stakeholders to translate design concepts into functional, pixel-perfect implementations.",
+                tags: ["Collaboration", "Design Handoff", "Agile", "User Testing"]
+              }
+            ].map((design, idx) => (
+              <div key={idx} className="bg-gray-900 rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-800">
+                <div className="h-2 bg-gradient-to-r from-cyan-500 to-indigo-500"></div>
+                <div className="p-5">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-3xl">{design.icon}</span>
+                    <h3 className="text-xl font-bold text-white">{design.title}</h3>
+                  </div>
+                  <p className="text-gray-400 text-sm mt-2 leading-relaxed">{design.desc}</p>
+                  <div className="flex flex-wrap gap-2 mt-4">
+                    {design.tags.map(tag => (
+                      <span key={tag} className="text-xs bg-gray-800 text-cyan-400 px-3 py-1.5 rounded-full font-medium border border-cyan-500/30">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* Projects Section */}
         <div className="mb-14">
           <div className="flex items-center gap-2 border-b-2 border-gray-800 pb-3 mb-6">
             <span className="text-3xl">💻</span>
-            <h2 className="text-3xl font-bold bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">Featured Projects</h2>
+            <h2 className="text-3xl font-bold bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">Development Projects</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-7">
             {[
@@ -239,9 +332,9 @@ export default function Home() {
             <div>
               <h3 className="font-bold text-lg flex items-center gap-2">
                 <span className="text-2xl">👥</span> 
-                <span className="bg-gradient-to-r from-cyan-400 to-indigo-400 bg-clip-text text-transparent">Collaborative Development</span>
+                <span className="bg-gradient-to-r from-cyan-400 to-indigo-400 bg-clip-text text-transparent">Design + Development</span>
               </h3>
-              <p className="text-gray-400 text-sm mt-1">Experienced in on-site team environment, full software development lifecycle, agile methods, version control (Git/GitHub), and modern CI/CD practices.</p>
+              <p className="text-gray-400 text-sm mt-1">Bridging the gap between design and development — experienced in both UI/UX design (Figma) and full-stack implementation.</p>
             </div>
             <div>
               <h3 className="font-bold text-lg flex items-center gap-2">
@@ -267,9 +360,9 @@ export default function Home() {
               <span>🐙</span> GitHub/Saim-Maqsood-22
             </a>
             <span className="flex items-center gap-1 text-gray-400"><span>🏆</span> Google Cybersecurity Certified</span>
-            <span className="flex items-center gap-1 text-gray-400"><span>🚀</span> Available for Immediate Start in UAE</span>
+            <span className="flex items-center gap-1 text-gray-400"><span>🚀</span> UI/UX Designer & Full-Stack Developer</span>
           </div>
-          <p>© 2026 Saim Maqsood — Full‑stack developer portfolio | Available across Dubai & remote. Updated March 2026.</p>
+          <p>© 2026 Saim Maqsood — UI/UX Designer & Full‑Stack Developer | Currently crafting designs at Elchai Group | Available across Dubai & remote</p>
         </footer>
       </div>
     </div>
