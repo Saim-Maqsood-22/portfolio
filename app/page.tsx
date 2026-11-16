@@ -127,7 +127,7 @@ export default function Home() {
     <div className="min-h-screen bg-[#0a0e1a] text-white">
       {/* Ambient background */}
       <div className="fixed inset-0 bg-grid pointer-events-none" />
-      <div className="fixed -top-40 -right-40 w-lg h-128 bg-cyan-500/10 rounded-full blur-[120px] pointer-events-none animate-float-slow" />
+      <div className="fixed -top-40 -right-40 w-32rem h-32rem bg-cyan-500/10 rounded-full blur-[120px] pointer-events-none animate-float-slow" />
       <div className="fixed -bottom-40 -left-40 w-lg h-128 bg-indigo-500/10 rounded-full blur-[120px] pointer-events-none animate-float-slow" style={{ animationDelay: '3s' }} />
 
       {/* Email Popup Notification */}
@@ -350,14 +350,15 @@ export default function Home() {
                   <span className="w-2.5 h-2.5 rounded-full bg-emerald-400/70"></span>
                   <span className="ml-3 text-[11px] text-gray-500 font-mono truncate">style-hub-plum-psi.vercel.app</span>
                 </div>
-                <div className="relative w-full aspect-16/10">
+                <div className="relative w-full aspect-16/10 bg-white">
                   <Image
-                    src="/images/stylehub.png"
-                    alt="StyleHub fashion e-commerce homepage"
+                    src="/images/stylehub.jpg"
+                    alt="StyleHub logo"
                     fill
                     sizes="(min-width: 768px) 50vw, 100vw"
-                    className="object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]"
+                    className="object-contain transition-transform duration-500 group-hover:scale-[1.03]"
                   />
+                  <span className="absolute bottom-3 right-3 text-[11px] font-mono bg-gray-950/80 text-gray-300 px-2.5 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">Open live site ↗</span>
                 </div>
               </a>
 
@@ -401,7 +402,7 @@ export default function Home() {
             </div>
             <div className="bg-gray-900/60 rounded-3xl p-4 md:p-6 border border-gray-800">
               <div className="relative overflow-hidden rounded-2xl">
-                <div className="relative min-h-125 md:min-h-580px bg-black/30 rounded-2xl">
+                <div className="relative min-h-125 md:min-h-125 bg-black/30 rounded-2xl">
                   {carouselSlides.map((slide, idx) => (
                     <div key={slide.id} className={`absolute inset-0 transition-all duration-500 ease-in-out ${currentSlide === idx ? 'opacity-100 z-10' : 'opacity-0 z-0 pointer-events-none'}`}>
                       <div className="bg-slate-900/80 backdrop-blur-sm border border-indigo-500/20 rounded-2xl p-6 md:p-8 shadow-2xl h-full overflow-auto">
