@@ -57,6 +57,9 @@ export default function Home() {
   // LinkedIn post URL for XDimension app interface
   const xDimensionPostUrl = "https://www.linkedin.com/posts/saim-maqsood-8b27a737a_turning-a-concept-into-a-functional-ui-ugcPost-7428364709310910464-qJ2h?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAF270kYBij__hZg6X6lQaMU8h4ndLWsceR8";
 
+  // StyleHub live project URL
+  const styleHubUrl = "https://style-hub-plum-psi.vercel.app/";
+
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
     window.addEventListener('scroll', onScroll, { passive: true });
@@ -114,6 +117,7 @@ export default function Home() {
 
   const navLinks = [
     { href: '#gallery', label: 'Gallery' },
+    { href: '#web-projects', label: 'Web Projects' },
     { href: '#experience', label: 'Experience' },
     { href: '#video', label: 'Video' },
     { href: '#contact', label: 'Contact' },
@@ -123,8 +127,8 @@ export default function Home() {
     <div className="min-h-screen bg-[#0a0e1a] text-white">
       {/* Ambient background */}
       <div className="fixed inset-0 bg-grid pointer-events-none" />
-      <div className="fixed -top-40 -right-40 w-[32rem] h-[32rem] bg-cyan-500/10 rounded-full blur-[120px] pointer-events-none animate-float-slow" />
-      <div className="fixed -bottom-40 -left-40 w-[32rem] h-[32rem] bg-indigo-500/10 rounded-full blur-[120px] pointer-events-none animate-float-slow" style={{ animationDelay: '3s' }} />
+      <div className="fixed -top-40 -right-40 w-lg h-128 bg-cyan-500/10 rounded-full blur-[120px] pointer-events-none animate-float-slow" />
+      <div className="fixed -bottom-40 -left-40 w-lg h-128 bg-indigo-500/10 rounded-full blur-[120px] pointer-events-none animate-float-slow" style={{ animationDelay: '3s' }} />
 
       {/* Email Popup Notification */}
       {showEmailPopup && (
@@ -145,7 +149,7 @@ export default function Home() {
       {/* Sticky Header */}
       <header className={`sticky top-0 z-40 transition-all duration-300 ${scrolled ? 'bg-[#0a0e1a]/85 backdrop-blur-md border-b border-gray-800 shadow-lg shadow-black/20' : 'border-b border-transparent'}`}>
         <div className="max-w-6xl mx-auto px-6 lg:px-8 flex flex-wrap justify-between items-center py-4">
-          <a href="#top" className="text-lg font-bold tracking-tight bg-gradient-to-r from-white via-cyan-300 to-indigo-400 bg-clip-text text-transparent">
+          <a href="#top" className="text-lg font-bold tracking-tight bg-linear-to-r from-white via-cyan-300 to-indigo-400 bg-clip-text text-transparent">
             Saim Maqsood
           </a>
           <nav className="flex gap-6 text-sm text-gray-400">
@@ -162,7 +166,7 @@ export default function Home() {
 
         {/* Hero Section */}
         <Reveal>
-          <section className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-slate-900/80 to-gray-900/80 border border-gray-800 p-8 md:p-12 mb-20 shadow-2xl">
+          <section className="relative rounded-3xl overflow-hidden bg-linear-to-br from-slate-900/80 to-gray-900/80 border border-gray-800 p-8 md:p-12 mb-20 shadow-2xl">
             <div className="relative z-10 max-w-3xl">
               <div className="flex flex-wrap gap-2 mb-5">
                 <span className="bg-emerald-500/15 text-emerald-300 text-xs font-semibold px-3 py-1.5 rounded-full border border-emerald-500/30 flex items-center gap-1.5">
@@ -170,7 +174,7 @@ export default function Home() {
                 </span>
                 <span className="bg-indigo-500/15 text-indigo-300 text-xs font-semibold px-3 py-1.5 rounded-full border border-indigo-500/30">UAE · Immediate joiner</span>
               </div>
-              <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4 bg-gradient-to-r from-white via-white to-cyan-200 bg-clip-text text-transparent">
+              <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4 bg-linear-to-r from-white via-white to-cyan-200 bg-clip-text text-transparent">
                 Designing governance &amp; role-clarity systems
               </h1>
               <p className="text-gray-400 text-base leading-relaxed mb-2">
@@ -182,6 +186,9 @@ export default function Home() {
               <div className="flex flex-wrap gap-3 mt-7">
                 <a href="#gallery" className="bg-cyan-500 hover:bg-cyan-400 transition-colors px-6 py-2.5 rounded-full text-gray-950 text-sm font-semibold shadow-lg shadow-cyan-500/20">
                   View designs
+                </a>
+                <a href="#web-projects" className="border border-gray-700 hover:border-cyan-400 hover:text-cyan-300 px-6 py-2.5 rounded-full text-gray-300 text-sm transition-colors">
+                  Web projects
                 </a>
                 <a href="#video" className="border border-gray-700 hover:border-cyan-400 hover:text-cyan-300 px-6 py-2.5 rounded-full text-gray-300 text-sm transition-colors">
                   Watch showreel
@@ -199,9 +206,9 @@ export default function Home() {
 
         {/* Elchai Group highlight */}
         <Reveal className="mb-20">
-          <section className="bg-gradient-to-r from-cyan-500/[0.07] via-indigo-500/[0.07] to-violet-500/[0.07] rounded-3xl p-7 md:p-8 border border-cyan-500/20">
+          <section className="bg-linear-to-r from-cyan-500/[0.07] via-indigo-500/[0.07] to-violet-500/[0.07] rounded-3xl p-7 md:p-8 border border-cyan-500/20">
             <div className="flex items-center gap-4 mb-6">
-              <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-cyan-500/20 to-indigo-500/20 border border-cyan-500/30 flex items-center justify-center text-2xl shrink-0">🎨</div>
+              <div className="w-12 h-12 rounded-2xl bg-linear-to-br from-cyan-500/20 to-indigo-500/20 border border-cyan-500/30 flex items-center justify-center text-2xl shrink-0">🎨</div>
               <div>
                 <h2 className="text-xl md:text-2xl font-bold text-white">Design work at Elchai Group</h2>
                 <p className="text-cyan-400 text-sm">UI/UX Designer · Feb 2026 – May 2026</p>
@@ -252,7 +259,7 @@ export default function Home() {
             <SectionHeading title="Featured design — Universe Eye" />
             <div className="grid md:grid-cols-2 gap-8 items-center bg-gray-900/60 rounded-3xl p-6 md:p-7 border border-gray-800 transition-shadow duration-300 hover:shadow-2xl hover:shadow-cyan-500/5">
               <div className="relative overflow-hidden rounded-2xl bg-slate-950/40">
-                <div className="relative w-full aspect-[4/3]">
+                <div className="relative w-full aspect-4/3">
                   <Image src="/images/image1.png" alt="Universe Eye Trust Design" width={800} height={600} className="w-full h-full object-contain rounded-lg" priority />
                 </div>
               </div>
@@ -277,7 +284,7 @@ export default function Home() {
             <SectionHeading title="Boundaries as strength" />
             <div className="grid md:grid-cols-2 gap-8 items-center bg-gray-900/60 rounded-3xl p-6 md:p-7 border border-gray-800 transition-shadow duration-300 hover:shadow-2xl hover:shadow-teal-500/5">
               <div className="relative overflow-hidden rounded-2xl bg-slate-950/40">
-                <div className="relative w-full aspect-[4/3]">
+                <div className="relative w-full aspect-4/3">
                   <Image src="/images/image6.jpeg" alt="Boundaries are not restrictions on strong systems" width={800} height={600} className="w-full h-full object-contain rounded-lg" />
                 </div>
               </div>
@@ -324,6 +331,67 @@ export default function Home() {
           </section>
         </Reveal>
 
+        {/* WEB PROJECT – StyleHub */}
+        <Reveal className="mb-20 scroll-mt-24">
+          <section id="web-projects">
+            <SectionHeading title="Web project — StyleHub" />
+            <div className="grid md:grid-cols-2 gap-8 items-center bg-gray-900/60 rounded-3xl p-6 md:p-7 border border-gray-800 transition-shadow duration-300 hover:shadow-2xl hover:shadow-rose-500/5">
+              <a
+                href={styleHubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block relative overflow-hidden rounded-2xl bg-slate-950/40 border border-gray-800"
+                aria-label="Open StyleHub live site"
+              >
+                {/* Browser-style top bar */}
+                <div className="flex items-center gap-1.5 px-4 py-2.5 bg-gray-950/70 border-b border-gray-800">
+                  <span className="w-2.5 h-2.5 rounded-full bg-rose-400/70"></span>
+                  <span className="w-2.5 h-2.5 rounded-full bg-amber-400/70"></span>
+                  <span className="w-2.5 h-2.5 rounded-full bg-emerald-400/70"></span>
+                  <span className="ml-3 text-[11px] text-gray-500 font-mono truncate">style-hub-plum-psi.vercel.app</span>
+                </div>
+                <div className="relative w-full aspect-16/10">
+                  <Image
+                    src="/images/stylehub.png"
+                    alt="StyleHub fashion e-commerce homepage"
+                    fill
+                    sizes="(min-width: 768px) 50vw, 100vw"
+                    className="object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]"
+                  />
+                </div>
+              </a>
+
+              <div>
+                <p className="text-rose-400 text-xs font-mono uppercase tracking-wide mb-3">Web app · E-commerce</p>
+                <h3 className="text-2xl font-bold text-white mb-3">StyleHub — closet simplified</h3>
+                <p className="text-gray-400 leading-relaxed">
+                  A modern fashion storefront built around streetwear and everyday essentials. It has curated collections, a featured products grid, a shop page, and a slide-out cart that unlocks free express shipping at a spend threshold.
+                </p>
+                <ul className="mt-4 text-gray-400 text-sm space-y-1.5 list-disc list-inside">
+                  <li>Responsive landing page with trending categories and best sellers</li>
+                  <li>Interactive cart drawer with live subtotal and shipping logic</li>
+                  <li>Newsletter signup and multi-page navigation (Home, Shop, About)</li>
+                </ul>
+                <div className="mt-5 flex gap-2 flex-wrap">
+                  <Tag color="rose">Next.js</Tag>
+                  <Tag color="rose">React</Tag>
+                  <Tag color="rose">TypeScript</Tag>
+                  <Tag color="rose">Tailwind CSS</Tag>
+                  <Tag color="rose">Vercel</Tag>
+                </div>
+                <a
+                  href={styleHubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 mt-6 bg-rose-500 hover:bg-rose-400 text-gray-950 font-semibold px-6 py-3 rounded-full transition-colors shadow-lg shadow-rose-500/20"
+                >
+                  Visit live site →
+                </a>
+              </div>
+            </div>
+          </section>
+        </Reveal>
+
         {/* CAROUSEL SECTION */}
         <Reveal className="mb-24">
           <section>
@@ -333,7 +401,7 @@ export default function Home() {
             </div>
             <div className="bg-gray-900/60 rounded-3xl p-4 md:p-6 border border-gray-800">
               <div className="relative overflow-hidden rounded-2xl">
-                <div className="relative min-h-[500px] md:min-h-[580px] bg-black/30 rounded-2xl">
+                <div className="relative min-h-125 md:min-h-580px bg-black/30 rounded-2xl">
                   {carouselSlides.map((slide, idx) => (
                     <div key={slide.id} className={`absolute inset-0 transition-all duration-500 ease-in-out ${currentSlide === idx ? 'opacity-100 z-10' : 'opacity-0 z-0 pointer-events-none'}`}>
                       <div className="bg-slate-900/80 backdrop-blur-sm border border-indigo-500/20 rounded-2xl p-6 md:p-8 shadow-2xl h-full overflow-auto">
@@ -341,7 +409,7 @@ export default function Home() {
                           <span className="text-cyan-300 text-xs font-mono tracking-wide">0{idx + 1} / 04</span>
                           <span className="text-indigo-300 text-xs font-mono tracking-wide">{slide.subtitle}</span>
                         </div>
-                        <div className="relative w-full h-[400px] md:h-[420px]">
+                        <div className="relative w-full h-100 md:h-105">
                           <Image src={slide.image} alt={slide.title} width={800} height={600} className="w-full h-full object-contain rounded-lg" />
                         </div>
                         <p className="text-gray-500 text-xs mt-4 text-right">Universe Eye · theuniverseye.com →</p>
@@ -393,7 +461,7 @@ export default function Home() {
             </div>
             <div className="bg-gray-900/60 rounded-3xl p-7 border border-gray-800 flex flex-col">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-cyan-500/20 to-indigo-500/20 border border-cyan-500/30 flex items-center justify-center text-2xl">🚀</div>
+                <div className="w-11 h-11 rounded-2xl bg-linear-to-br from-cyan-500/20 to-indigo-500/20 border border-cyan-500/30 flex items-center justify-center text-2xl">🚀</div>
                 <h3 className="font-bold text-lg text-white">Immediate availability</h3>
               </div>
               <p className="text-gray-400 text-sm leading-relaxed">Available for immediate join in UAE — no visa processing overhead, ready to start within 24 hours.</p>
@@ -455,7 +523,7 @@ export default function Home() {
                 { title: "Motion Graphics & Video", icon: "🎬", desc: "Produced engaging motion design pieces and brand videos that communicate complex governance concepts simply.", tags: ["After Effects", "Premiere Pro", "Motion Design", "Video Editing"] }
               ].map((design) => (
                 <div key={design.title} className="bg-gray-900/60 rounded-2xl overflow-hidden border border-gray-800 hover:-translate-y-1.5 hover:border-gray-700 transition-all duration-300">
-                  <div className="h-1 bg-gradient-to-r from-cyan-500 to-indigo-500"></div>
+                  <div className="h-1 bg-linear-to-r from-cyan-500 to-indigo-500"></div>
                   <div className="p-6">
                     <div className="flex items-center gap-2.5 mb-3">
                       <span className="text-2xl">{design.icon}</span>
@@ -476,7 +544,7 @@ export default function Home() {
 
         {/* Contact Section */}
         <Reveal className="mb-6 scroll-mt-24">
-          <section id="contact" className="bg-gradient-to-br from-slate-900/80 to-gray-900/80 rounded-3xl border border-gray-800 p-8 md:p-12 text-center">
+          <section id="contact" className="bg-linear-to-br from-slate-900/80 to-gray-900/80 rounded-3xl border border-gray-800 p-8 md:p-12 text-center">
             <h3 className="text-2xl md:text-3xl font-bold text-white mb-3">Let&apos;s bring structure &amp; design together</h3>
             <p className="text-gray-400 max-w-xl mx-auto leading-relaxed">Saim Maqsood — UI/UX Designer &amp; Developer, available for freelance or full-time opportunities in the UAE.</p>
             <div className="flex flex-wrap justify-center gap-x-6 gap-y-3 mt-8 text-sm">
@@ -511,7 +579,7 @@ export default function Home() {
 function SectionHeading({ title, size = 'md', noMargin = false }: { title: string; size?: 'md' | 'lg'; noMargin?: boolean }) {
   return (
     <div className={`flex items-center gap-3 ${noMargin ? '' : 'mb-6'}`}>
-      <div className="h-6 w-1 bg-gradient-to-b from-cyan-400 to-indigo-500 rounded-full"></div>
+      <div className="h-6 w-1 bg-linear-to-b from-cyan-400 to-indigo-500 rounded-full"></div>
       <h2 className={`font-bold text-white tracking-tight ${size === 'lg' ? 'text-2xl md:text-3xl' : 'text-xl md:text-2xl'}`}>{title}</h2>
     </div>
   );
@@ -522,6 +590,7 @@ const tagColors: Record<string, string> = {
   indigo: 'bg-indigo-500/10 text-indigo-300 border-indigo-500/25',
   teal: 'bg-teal-500/10 text-teal-300 border-teal-500/25',
   amber: 'bg-amber-500/10 text-amber-300 border-amber-500/25',
+  rose: 'bg-rose-500/10 text-rose-300 border-rose-500/25',
 };
 
 function Tag({ children, color }: { children: React.ReactNode; color: keyof typeof tagColors }) {
